@@ -16,6 +16,9 @@ class Rekody < Formula
 
   def install
     bin.install "rekody"
+    # On-device Apple Foundation Models cleanup helper, present only in the
+    # Apple Silicon tarball (macOS 26+). Optional — rekody works without it.
+    bin.install "rekody-fm" if File.exist?("rekody-fm")
   end
 
   test do
