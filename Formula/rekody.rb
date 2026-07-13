@@ -1,16 +1,16 @@
 class Rekody < Formula
   desc "Open-source, privacy-first voice dictation for the terminal"
   homepage "https://github.com/rekody/rekody"
-  version "0.5.18"
+  version "0.5.19"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/rekody/rekody/releases/download/v#{version}/rekody-#{version}-macos-aarch64.tar.gz"
-      sha256 "3a5d247cdc9edc9ea41f5c19570082360c2adbc75829891b5290634fd30a0cde"
+      sha256 "22a86a2af3dcfc14718aeed0cc615c96708c9baa5b10791fab8fe88b6a564e0e"
     else
       url "https://github.com/rekody/rekody/releases/download/v#{version}/rekody-#{version}-macos-x86_64.tar.gz"
-      sha256 "4bea992cdaa31bcbec87c592ed21fac410338c012950723e8dd1023340dc166d"
+      sha256 "89ba19e8b8873b1a92048b6ecaa8119ec7715b75113d54b8c979a3c1fe7c6b47"
     end
   end
 
